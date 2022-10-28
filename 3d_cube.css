@@ -1,13 +1,13 @@
 * {
-  background-color: grey;
+  background-color: rgb(216, 216, 216);
   box-sizing: border-box;
 }
 
 .conteiner {
   position: relative;
-  left: 400px;
+  left: 180px;
   top: 200px;
-  width: 400px;
+  width: 450px;
   height: 400px;
   perspective: 1000px;
 }
@@ -22,44 +22,54 @@
   0% {
     transform: rotateX(0deg) rotateY(0deg);
   }
-  50% {
-    transform: rotateX(45deg) rotateY(90deg);
+  20% {
+    transform: rotateX(60deg) rotateY(60deg);
+  }
+  40% {
+    transform: rotateX(70deg) rotateY(90deg);
+  }
+  60% {
+    transform: rotateX(100deg) rotateY(40deg);
+  }
+  80% {
+    transform: rotateX(50deg) rotateY(-40deg);
   }
   100% {
-    transform: rotateX(-45deg) rotateY(180deg);
+    transform: rotateX(0deg) rotateY(0deg);
   }
 }
 .side {
   position: absolute;
-  width: 300px;
-  height: 300px;
-  border: 5px solid black;
+  width: 200px;
+  height: 200px;
+  border: 2px solid rgb(117, 117, 117);
   text-align: center;
   font-size: 30px;
-  line-height: 300px;
+  line-height: 200px;
   box-sizing: border-box;
+  background-color: silver;
 }
 
 div .front {
-  transform: translateZ(150px);
+  transform: translateZ(100px);
 }
 
 div .back {
-  transform: rotateY(180deg) translateZ(150px);
+  transform: rotateY(180deg) translateZ(100px);
 }
 
 div .left {
-  transform: rotateY(-90deg) translateZ(150px);
+  transform: rotateY(-90deg) translateZ(100px);
 }
 
 div .right {
-  transform: rotateY(90deg) translateZ(150px);
+  transform: rotateY(90deg) translateZ(100px);
 }
 
 div .top {
-  transform: rotateX(90deg) translateZ(150px);
+  transform: rotateX(90deg) translateZ(100px);
 }
 
 div .buttom {
-  transform: rotateX(-90deg) translateZ(150px);
+  transform: rotateX(-90deg) translateZ(100px);
 }
